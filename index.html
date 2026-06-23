@@ -1,3 +1,9 @@
+<style>
+  .clients .swiper-wrapper {
+    justify-content: center;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +15,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/ksks-copy.png" rel="icon">
+  <link href="assets/img/ksks.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -49,7 +55,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -110,50 +116,48 @@
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 120
-                },
-                "1200": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
+  "loop": false,
+  "speed": 600,
+  "autoplay": false,
+  "slidesPerView": "auto",
+  "pagination": {
+    "el": ".swiper-pagination",
+    "type": "bullets",
+    "clickable": true
+  },
+  "breakpoints": {
+    "320": {
+      "slidesPerView": 2,
+      "spaceBetween": 40
+    },
+    "480": {
+      "slidesPerView": 3,
+      "spaceBetween": 60
+    },
+    "640": {
+      "slidesPerView": 4,
+      "spaceBetween": 80
+    },
+    "992": {
+      "slidesPerView": 5,
+      "spaceBetween": 120
+    },
+    "1200": {
+      "slidesPerView": 6,
+      "spaceBetween": 120
+    }
+  }
+}
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div> -->
           </div>
         </div>
 
@@ -368,7 +372,7 @@
 
               <div class="progress">
                 <span class="skill">
-                  <span>Video Editing - Wondershare Filmora</span>
+                  <span>Video Editing</span>
                   <i class="val">85%</i>
                 </span>
                 <div class="progress-bar-wrap">
@@ -639,7 +643,10 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>
+          Explore our selected projects, showcasing digital solutions, creative works,
+          and business applications developed for various clients and industries.
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -649,122 +656,134 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
+            <li data-filter=".filter-editing">Editing</li>
+            <li data-filter=".filter-photo">Photography</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-app-2.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-1.webp" title="App 1"
+                <h4>Application 1</h4>
+                <p>Custom web solutions to business and operational needs.</p>
+                <a href="assets/img/portfolio/portfolio-app-2.png" title="Web-Based Employee Attendance System"
                   data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-app-1.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-editing">
+              <img src="assets/img/portfolio/portfolio-edit3d-1.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-1.webp" title="Product 1"
+                <h4>3D Editing</h4>
+                <p>Transforming concepts into realistic and detailed 3D designs.</p>
+                <a href="assets/img/portfolio/portfolio-edit3d-1.jpeg" title="3D Editing with SketchUp"
                   data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-editing-3d.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-editing">
+              <img src="assets/img/portfolio/portfolio-edit-photo-1.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-3.webp" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                <h4>Photo Editing</h4>
+                <p>Enhancing images to create compelling visual content.</p>
+                <a href="assets/img/portfolio/portfolio-edit-photo-1.jpeg" title="Photo Editing 1"
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-editing-photo.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-app-2-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-4.webp" title="App 2" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <h4>Application 2</h4>
+                <p>Custom web solutions to business and operational needs.</p>
+                <a href="assets/img/portfolio/portfolio-app-2-1.png" title="Digital Printing E-Commerce Website"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-app-2.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-editing">
+              <img src="assets/img/portfolio/portfolio-editvideo-1.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-2.webp" title="Product 2"
+                <h4>Video Editing</h4>
+                <p>Turning raw footage into engaging visual stories.</p>
+                <a href="assets/img/portfolio/portfolio-editvideo-1.jpeg" title="Video Editing with Wondershare Filmora"
                   data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/portfolio-portrait-3.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-3.webp" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-editing-video.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-app-5-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-7.webp" title="App 3" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <h4>Application 5</h4>
+                <p>Custom web solutions to business and operational needs.</p>
+                <a href="assets/img/portfolio/portfolio-app-5-1.png" title="Production Monitoring System"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-app-5.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/portfolio-app-3-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-8.webp" title="Product 3"
+                <h4>Appliaction 3</h4>
+                <p>Custom web solutions to business and operational needs.</p>
+                <a href="assets/img/portfolio/portfolio-app-3-1.png" title="Company Profile & Product Catalog Website"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-app-3.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-editing">
+              <img src="assets/img/portfolio/portfolio-edit3d-4.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Editing 2</h4>
+                <p>Transforming concepts into realistic and detailed 3D designs.</p>
+                <a href="assets/img/portfolio/portfolio-edit3d-4.jpeg" title="3D Editing 2 With SketchUp"
                   data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-editing-3d-2.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-photo">
+              <img src="assets/img/portfolio/portfolio-photo-1.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-9.webp" title="Branding 2"
+                <h4>Wedding Photography</h4>
+                <p>Capturing timeless moments and emotions from your special day.</p>
+                <a href="assets/img/portfolio/portfolio-photo-1.jpeg" title="Photo 1"
                   data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                     class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                <a href="portfolio-photo-1.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/portfolio-app-4-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Appliaction 4</h4>
+                <p>Custom web solutions to business and operational needs.</p>
+                <a href="assets/img/portfolio/portfolio-app-4-1.png"
+                  title="Manufacturing Supply Chain Monitoring System" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-app-4.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -795,7 +814,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-7.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/person/person-agung.JPG" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Agung Firmansyah</h4>
                 <span>Solution Architect & 3D Visualization Specialist</span>
@@ -806,8 +825,8 @@
                 <div class="social">
                   <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a> -->
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/agungf09" target="_blank"> <i class="bi bi-linkedin"></i> </a>
                 </div>
               </div>
             </div>
@@ -815,7 +834,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-9.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/person/person-usep.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Usep Saefullah</h4>
                 <span>Creative Marketing & Visual Content Specialist</span>
@@ -826,7 +845,7 @@
                 <div class="social">
                   <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a> -->
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
                   <a href=""> <i class="bi bi-linkedin"></i> </a>
                 </div>
               </div>
@@ -835,7 +854,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-6.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/person/person-ciko.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Ciko Muhammad R</h4>
                 <span>Multimedia & Creative Production Specialist</span>
@@ -846,8 +865,9 @@
                 <div class="social">
                   <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a> -->
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/ciko-muhammad-rizki-238520224" target="_blank"> <i
+                      class="bi bi-linkedin"></i> </a>
                 </div>
               </div>
             </div>
@@ -855,7 +875,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-12.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/person/person-rizki.JPG" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Rizki Zakaria N</h4>
                 <span>Business Analyst & Web Solution Specialist</span>
@@ -866,8 +886,9 @@
                 <div class="social">
                   <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a> -->
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/rizkizakaria-nuralfian" target="_blank"> <i
+                      class="bi bi-linkedin"></i> </a>
                 </div>
               </div>
             </div>
@@ -878,135 +899,6 @@
       </div>
 
     </section><!-- /Team Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                    veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                    quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -1038,7 +930,7 @@
                 We’ll help you choose the best solution.
               </p>
 
-              <a href="https://wa.me/6281234567890?text=Halo%20Tetra%20Studio%2C%20saya%20ingin%20konsultasi%20project."
+              <a href="https://wa.me/6281287010008?text=Halo%20Tetra%20Studio%2C%20saya%20ingin%20konsultasi%20project."
                 target="_blank" class="btn btn-success btn-lg">
                 <i class="bi bi-whatsapp"></i>
                 Consult via WhatsApp
@@ -1094,14 +986,12 @@
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
-      <div class="row gy-4">
+      <!-- <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
             <span class="sitename">Tetra Studio</span>
           </a>
           <div class="footer-contact pt-3">
-            <!-- <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p> -->
             <p class="mt-3"><strong>Phone:</strong> <span>+62 896 4416 1874</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
@@ -1131,14 +1021,12 @@
           <h4>Follow Us</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
-            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a> -->
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-      </div>
+      </div> -->
     </div>
 
     <div class="container copyright text-center mt-4">
